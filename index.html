@@ -6,9 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learn CSS</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        h1{
+            color: teal;
+        }
+        h2{
+            color: red;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        .about-me-outer-div{
+            background-color: rgb(217, 215, 221);
+            padding: 20px;
+        }
+        .about-me-outer-div:hover{
+            background-color: rgb(217, 159, 231);
+            border-radius: 40px;
+            transition: 0.3;
+        }
+        table{
+            background-color: #FFFFFF;
+        }
+        tr:nth-child(even){
+            background-color: #dddddd;
+        }
+    </style>
 </head>
 <body>
-    <h1>How to learn ReactJS</h1>
+    <div style="background-color: rgba(91, 137, 138, 0.216); display: flex; justify-content: center; padding: 10px;">
+        <div style="border: 1px solid black; padding: 20px; border-radius: 20px;">
+        <h1>How to learn ReactJS</h1>
 
     <h2>What is ReactJS</h2>
 
@@ -20,41 +52,52 @@
         <li>HTML</li>
         <li>CSS</li>
         <li>JS</li>
+        <li>ReactJS</li>
     </ol>
     
     <table>
+        <thead>
         <th>Number</th>
         <th>Title</th>
         <th>Description</th>
-        <tr>
-            <td>01</td>
-            <td>HTML</td>
-            <td>Basic HTML syntax and elements</td>
-        </tr>
-        <tr>
-            <td>02</td>
-            <td>CSS</td>
-            <td>CSS Selection and how to use</td>
-        </tr>
-        <tr>
-            <td>03</td>
-            <td>JS</td>
-            <td>Core concepts of JS as a programming language</td>
-        </tr>
+    </thead>
+    <tbody>
+            <tr>
+                <td>01</td>
+                <td>HTML</td>
+                <td>Basic HTML syntax and elements</td>
+            </tr>
+            <tr>
+                <td>02</td>
+                <td>CSS</td>
+                <td>CSS Selection and how to use</td>
+            </tr>
+            <tr>
+                <td>03</td>
+                <td>JS</td>
+                <td>Core concepts of JS as a programming language</td>
+            </tr>
+        </tbody>
     </table>
     
     <hr>
     
     <h2>Abut the Instructor</h2>
-
-    <h3>Ravi Gunasena</h3>
+<div class="about-me-outer-div" style="display: flex; justify-content: space-around;">
+    <div>
+        <h3>Ravi Gunasena</h3>
     <p>Front End Web Developer & Digital Consultant</p>
-    <span>
-        <img src="" alt="Facebook Logo">
-        <img src="" alt="LinkedIn Logo">
-        <img src="" alt="Instagram Logo">
-        <img src="" alt="Twitter Logo">
-    </span>
+    <div style="display: flex; justify-content: space-around; width: 50%;">
+        <a href="https://facebookcom" target="_blank"><img src="./images/fb_logo.png" width="20px" alt="Facebook Logo"></a>
+        <img src="./images/linkedin_logo.png" width="20px" alt="LinkedIn Logo">
+        <img src="./images/instagram.webp" width="20px" alt="Instagram Logo">
+        <img src="./images/twitter.png" width="20px" alt="Twitter Logo">
+    </div>
+    </div>
+    <img src="./images/Ravi Gunasena.jpg" width="120px" alt="Ravi Gunasena">
+    
+</div>
+    
 
     <h2>Registration Form</h2>
 
@@ -62,5 +105,7 @@
 
     <span>Your Name <input type="text"> </span>
     <span>Age <input type="number" name="" id="" min="0" max="100"></span>
+    </div>
+    </div>
 </body>
 </html>
